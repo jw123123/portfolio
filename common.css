@@ -10,10 +10,10 @@
 :root {
   --font-color:#1F150C;
   --bg-color:#FFFCF5;
+  --dk-color:  #443025;
   --point-color: #E8703A;
   --c-red:     #C0392B;
   --li-grey:   rgba(31,21,12,.10);
-  --dk-grey:  rgba(31,21,12,.45);
   --en-title-font: 'Cormorant Garamond', serif;
   --en-body-font: 'Jost', serif;
   --title-font: 'Noto Serif KR', 'Pretendard Variable', sans-serif;
@@ -121,7 +121,7 @@ button {
 /* 프로젝트 영역 */
 .project-section {
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 
 .project-bg-title {
@@ -140,45 +140,39 @@ button {
   z-index:1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 300px;
 }
 
 .project-item { padding-bottom: 30px; }
 .project-item:nth-child(1) { margin-top: 60px; }
-.project-item:nth-child(2) { margin-top: 500px; }
-.project-item:nth-child(3) { margin-top: -200px; }
-.project-item:nth-child(4) { margin-top: 200px; }
+.project-item:nth-child(2) { margin-top: 450px; }
+.project-item:nth-child(3) { margin-top: -50px; }
+.project-item:nth-child(4) { margin-top: 300px; }
 
 .project-img {
-  display: block; width:100%;
-  aspect-ratio: 4/3;
+  display: block; 
+  width:100%;
   object-fit: cover;
 }
-/* placeholder colours */
-.img1 { background:linear-gradient(135deg,#7a6b5e,#a09080); }
-.img2 { background:linear-gradient(135deg,#b04030,#e05030); aspect-ratio:3/2; }
-.img3 { background:linear-gradient(135deg,#708090,#8ca0b0); }
-.img4 { background:linear-gradient(135deg,#507040,#6a9050); }
 
 .item-tag {
   display: inline-block;
   margin-top: 10px;
   padding: 3px 8px;
-  font-family: var(--f-ui);
-  font-size: 8px; font-weight:600;
-  letter-spacing: .07em; text-transform:uppercase;
+  font-family: var(--en-body-font);
+  font-size: 16px;
   color: #fff;
 }
-.tag-orange { background:var(--c-accent); }
-.tag-red    { background:var(--c-red); }
-.tag-blue   { background:#3a6880; }
-.tag-green  { background:#456e30; }
+.black { background:#1A1311; }
+.red    { background:#D82631; }
+.blue   { background:#00457C; }
+.green  { background:#2F4F3E; }
 
 .item-title {
   display: block;
-  margin-top: 7px;
-  font-size: 13px; font-weight:500;
-  line-height: 1.5; color:var(--c-text);
+  font-size: 32px; 
+  font-weight:700;
+  font-family: var(--title-font);
 }
 
 
@@ -201,11 +195,16 @@ button {
 }
 
 .brand-icon {
-  height: 60px;
 }
 .brand-icon img {
   height: 100%;
 }
+
+.canon{height: 60px;}
+.kcar{height: 40px;}
+.posco{height: 70px;}
+.garden{height: 50px;}
+
 .brand-video {
   position: absolute;
   right: 0;
@@ -330,7 +329,7 @@ button {
 .html:after{width: 70%;}
 .css:after{width: 70%;}
 .js:after{width: 50%;}
-.react:after{width: 30%;}
+.react:after{width: 20%;}
 .figma:after{width: 80%;}
 .ps:after{width: 70%;}
 .ai:after{width: 40%;}
@@ -362,10 +361,6 @@ button {
   justify-content: space-between;
 }
 
-.ft-info-wrap img{
-  width: 160px;
-  border-radius: 100px;
-}
 .ft-tagline {
   font-size: 15px; font-weight:300;
   line-height: 2;
@@ -386,28 +381,67 @@ button {
 .ft-col-item {
   font-size: 11px; font-weight:400;
   line-height: 1.9;
-  color: rgba(255,252,245,.62);
 }
 .ft-col-sub {
   font-size: 10px;
-  color: rgba(255,252,245,.32);
   margin-bottom: 5px;
 }
 
 /* 오른쪽: 밝은 배경 + 프로필 */
 .ft-light {
   flex: 1;
-  background: var(--c-bg);
   padding: 64px 5% 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 3em;
 }
-.ft-profile-wrap {
+.ft-info-list1 {
   display: flex;
-  align-items: flex-start;
-  gap: 24px;
+  gap: 5em;
+  align-items: center;
 }
+
+.ft-info-list1 img{
+  width: 250px;
+  border-radius: 200px;
+}
+.ft-info-list1 .ft-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 1.5em;
+}
+ 
+.ft-info-list2 {}
+
+.ft-sub{
+  display: flex;
+  gap: 10em;
+}
+
+.ft-label{
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.ft-info-list2 .ft-info{
+  display: flex;
+  gap: 2em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+}
+
+.ft-title{
+}
+.ft-content{
+}
+
+.git{
+  border-bottom: 1px solid #000;
+}
+
 .ft-avatar {
   width: 72px; height: 72px; border-radius: 50%;
   background: var(--li-grey);
