@@ -119,7 +119,6 @@ button {
   min-height: 70vh;
   display: flex; 
   align-items:center;
-  /* background: url(image/main_bg.jpg) center center /cover no-repeat; */
 }
 
 .hero-section:before {
