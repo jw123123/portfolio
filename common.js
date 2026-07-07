@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
 // 프로젝트 영역 GSAP
 gsap.registerPlugin(ScrollTrigger);
 
