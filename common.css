@@ -254,7 +254,7 @@ button {
 }
 .link{
   display: flex;
-  gap: 1em;
+  gap: .5em;
   padding-top: 1.5em;
 }
 .brand-viewmore {
@@ -285,10 +285,6 @@ button {
 .brand-viewmore.blue:hover  { background: #00457C; color: #fff; }
 .brand-viewmore.green:hover { background: #2F4F3E; color: #fff; }
 .brand-viewmore.yellow:hover{ background: #C9A86A; color: #fff; }
-
-.portfolio{}
-
-.site{}
 
 
 /* 스킬영역 */
